@@ -7,7 +7,7 @@ class FlipCounter {
     fun generate(maxFlips: Int, states: Int = 2) =
         arrayListOf<Int>()
             .also { value ->
-                repeat((0 until maxFlips).count()) {
+                repeat(maxFlips) {
                     value.add(getRandom(states))
                 }
             }
